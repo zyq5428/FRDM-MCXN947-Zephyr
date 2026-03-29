@@ -1,0 +1,13 @@
+{
+  "version": "25.3",
+  "toolchainPath": "e:/zephyr-sdk-0.17.4/arm-zephyr-eabi",
+  "linkedProjects": [],
+  "trustZoneType": "none",
+  "multicoreType": "none",
+  "projectType": "zephyr-freestanding",
+  "projectName": "nxp_app",
+  "sdk": {
+    "version": "4.3.0",
+    "path": "e:\\zephyrproject"
+  }
+}

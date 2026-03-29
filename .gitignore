@@ -1,0 +1,10 @@
+# 排除 MCUXpresso 生成的本地仓库信息文件夹
+__repo__/
+
+# 排除调试和编译输出文件夹
+debug/
+build/
+bin/
+
+# 排除 VS Code 的本地设置（可选，建议排除以免覆盖他人的配置）
+#.vscode/
