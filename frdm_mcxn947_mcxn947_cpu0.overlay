@@ -1,0 +1,22 @@
+/* frdm_mcxn947_mcxn947_cpu0.overlay */
+/* 必须包含这个文件，才能使用 PWM_MSEC 和 PWM_POLARITY_NORMAL 等宏 */
+#include <zephyr/dt-bindings/pwm/pwm.h>
+
+/ {
+    aliases {
+        /* 我们定义一个新的别名，专门给代码调用 */
+        pwm-led0 = &flex_pwm_led;
+    };
+
+    pwmleds {
+        compatible = "pwm-leds";
+        status = "okay";
+
+        flex_pwm_led: flex_pwm_led {
+            /* 引用 flexpwm1_pwm0 模块 */
+            /* 参数：<控制器 通道(0) 默认周期(20ms) 极性> */
+            pwms = <&flexpwm1_pwm0 0 PWM_MSEC(1) PWM_POLARITY_NORMAL>;
+            label = "FLEXPWM LED";
+        };
+    };
+};
