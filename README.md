@@ -30,8 +30,8 @@ Get-ChildItem -Path .\dts\bindings\sensor -Recurse -Include *.yaml | Select-Stri
 
 ### 查搜索子目录内的所有文件内容，查找含有'DMA'文件
 ```
-Get-ChildItem -Path . -Recurse -Filter *.* | Select-String -Pattern "DMA"
-Get-ChildItem -Path . -Recurse -Include *.overlay,*.dts | Select-String -Pattern "st7789"
+Get-ChildItem -Path . -Recurse -Filter *.* | Select-String -Pattern "p3t1755"
+Get-ChildItem -Path . -Recurse -Include *.overlay,*.dts | Select-String -Pattern "p3t1755"
 ```
 - 命令解释：
     - Get-ChildItem -Path . -Recurse: 递归地获取当前目录 (.) 及其所有子目录下的所有文件和文件夹。
